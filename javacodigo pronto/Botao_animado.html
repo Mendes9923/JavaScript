@@ -1,0 +1,52 @@
+<html>
+<head>
+<script type="text/javascript">
+	{
+	{var botao = 0;}
+	function anim_botao(){
+	bootbotao = setTimeout("anim_botao()", 3000);
+	botao = botao +1;
+	if (botao == 4){botao = 1};
+	if (botao == 1)
+	{document.form_botao.animado.value = "GOOGLE"};
+	if (botao ==2)
+	{document.form_botao.animado.value = "BING"};
+	if (botao ==3)
+	{document.form_botao.animado.value = "VC Sempe OnLine"};
+	}
+	function funcao_botao(){
+	if (botao == 1)
+	{location.href="http://www.google.com.br"};
+	if (botao == 2)
+	{location.href="http://br.bing.com"}
+	if (botao == 3)
+	{location.href="http://vocesempreonline.blogspot.com"};
+	}
+	setTimeout("anim_botao()", 10);
+	}
+</script>
+<style type="text/css">
+#animado_botao{
+	border: 1px;
+	border-color: black;
+	border-style:solid;
+	width: 130px;
+	height: 32px;
+	font-family:times;
+	font-size: 14px;
+	font-weight:bold;
+	background-color: #FF00FF;
+	color:#FFE4C4;
+	}
+#animado_botao:hover{
+	background-color: #6CA6CD;
+	color: black;
+	}
+</style>
+</head>
+<body>
+<form name="form_botao">
+<input type="button" name="animado" id="animado_botao" onclick="funcao_botao();"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+  <script>
+    //execulta ação uma vez após o tempo informado
+     setTimeout(function(){document.write('Teste')}, 3000)
+
+    var i = 5
+   var x =  setInterval(function() {
+      document.write(i)
+      i--
+      if(i === 0){
+        clearInterval(x)
+      }
+    }, 1000)
+
+   //Sempre executa a ação após o periodo informado
+    setInterval(function(){document.write('Teste' + '<br />')}, 1000)
+  </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
